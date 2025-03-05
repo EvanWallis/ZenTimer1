@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .timer {
+    font-size: 48px;
+    margin: 20px 0;
+  }
+  
+  .controls button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .controls button:disabled {
+    background: gray;
+    cursor: not-allowed;
+  }
+  
+  .note {
+    font-size: 12px;
+    color: #777;
+    margin-top: 20px;
+  }

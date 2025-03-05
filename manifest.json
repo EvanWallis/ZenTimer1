@@ -1,0 +1,9 @@
+{
+    "name": "Zen Timer",
+    "short_name": "ZenTimer",
+    "description": "A Zazen timer with unpredictable time shifts.",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000"
+  }
