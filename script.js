@@ -87,3 +87,6 @@ function playSound() {
 // Event Listeners
 startBtn.addEventListener("click", startTimer);
 stopBtn.addEventListener("click", stopTimer);
+document.getElementById("timeInput").addEventListener("touchstart", function() {
+  this.focus();
+});
