@@ -2,10 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Viewport tag to set initial scale and disable zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <!-- Enable full-screen mode on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <title>Zen Timer</title>
+    <!-- Link to your stylesheet -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="manifest" href="manifest.json"> <!-- Added for PWA support -->
+    <!-- Link to the PWA manifest -->
+    <link rel="manifest" href="manifest.json" />
+    <!-- Optional: Specify a startup image for iOS (uncomment and replace 'splash.png' if desired) -->
+    <!-- <link rel="apple-touch-startup-image" href="splash.png" /> -->
   </head>
   <body>
     <div class="container">
@@ -14,17 +22,19 @@
 
       <!-- Time input field -->
       <label for="timeInput">Set Time (minutes):</label>
-      <input type="number" id="timeInput" min="1" max="120" value="30">
+      <input type="number" id="timeInput" min="1" max="120" value="30" />
 
+      <!-- Timer Display -->
       <div class="timer">
         <span id="minutes">30</span>:<span id="seconds">00</span>
       </div>
 
+      <!-- Control Buttons -->
       <div class="controls">
         <button id="startBtn">Start</button>
         <button id="stopBtn" disabled>Stop</button>
       </div>
-    </div> <!-- Closing the missing container div -->
+    </div>
 
     <script src="script.js"></script>
   </body>
