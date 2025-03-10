@@ -79,7 +79,7 @@ function updateDisplay(timeLeft) {
 function randomTimeShift(timeLeft) {
   // 30% chance of time shift
   if (Math.random() < 0.3) {
-    const shift = Math.floor(Math.random() * 600) - 300; // Between -300 and +300 seconds
+    const shift = Math.floor(Math.random() * 601) - 300; // Between -300 and +300 seconds
     return Math.max(10, timeLeft + shift); // Ensure at least 10 seconds remain
   }
   return timeLeft;
